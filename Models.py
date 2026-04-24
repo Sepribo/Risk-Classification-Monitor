@@ -56,10 +56,10 @@ if __name__ == "__main__":
     
     # Change this to your actual file name
     #input_csv = input("Enter the path to your numerical CSV file: ").strip()
-    input_csv = "C:/Users/user/Intelligent Monitoring System/preprocess_dataset.csv"
+    input_csv = "C:/Users/cherr/OneDrive/Desktop/PROJECT INST/clean_data"
     
     if not input_csv:
-        input_csv = "data_numerical.csv"   # default name from previous script
+        input_csv = "clean_data.csv"   # default name from previous script
     
     X_train, X_test, y_train, y_test,y = prepare_data(input_csv)
     target_names = [str(name) for name in sorted(pd.unique(y_train))]
